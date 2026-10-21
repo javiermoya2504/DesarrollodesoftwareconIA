@@ -1,0 +1,118 @@
+:root {
+  --course-bg: #ffffff;
+  --course-ink: #26343d;
+  --course-muted: #566775;
+  --course-cyan: #267f9f;
+  --course-violet: #7c65a8;
+  --slidev-theme-primary: #2b90b6;
+}
+html, body, #app { background: var(--course-bg); }
+.slidev-layout { color: var(--course-ink); background: var(--course-bg); font-family: 'Avenir Next', Avenir, 'Segoe UI', sans-serif; font-size: 26px; line-height: 1.45; text-align: left; }
+.slidev-layout.lesson { padding: 44px 64px 62px; }
+.slidev-layout h1, .slidev-layout h2, .slidev-layout h3 { color: var(--course-ink); font-weight: 500; }
+.slidev-layout h1 { font-size: 44px; line-height: 1.14; margin: 14px 0 24px; letter-spacing: -0.8px; }
+.slidev-layout h2 { font-size: 32px; line-height: 1.22; }
+.slidev-layout h3 { font-size: 26px; line-height: 1.28; margin: 0 0 12px; }
+.slidev-layout p, .slidev-layout h1 + p { margin: 0 0 18px; line-height: 1.45; opacity: 1; }
+.slidev-layout strong { color: var(--course-cyan); font-weight: 500; }
+.slidev-layout ul, .slidev-layout ol { margin: 18px 0; padding-left: 28px; }
+.slidev-layout li { margin: 12px 0; padding-left: 7px; line-height: 1.45; }
+.slidev-layout li::marker { color: var(--course-violet); }
+.slidev-layout a { color: var(--course-cyan); border-bottom: 1px solid #267f9f55; text-decoration: none; }
+.slidev-layout a:hover { border-bottom-color: var(--course-cyan); }
+.eyebrow { font-size: 15px; font-weight: 500; letter-spacing: 2.2px; color: var(--course-cyan); text-transform: uppercase; }
+.lesson-eyebrow { min-height: 22px; }
+.lesson-content { position: relative; }
+.slide-footer { position: absolute; inset: auto 64px 24px; display: flex; justify-content: space-between; border-top: 1px solid #e3e8ec; padding-top: 12px; font-size: 14px; color: #76848c; letter-spacing: .3px; }
+.slide-footer .slidev-page-number { position: static; }
+.slidev-layout .lead { font-size: 32px; line-height: 1.45; max-width: 1080px; color: #354653; }
+.slidev-layout .small { font-size: 21px; line-height: 1.4; }
+.slidev-layout .muted { color: var(--course-muted); }
+.slidev-layout .takeaway { font-size: 24px; color: #45535e; border-left: 3px solid var(--course-violet); padding: 12px 0 12px 22px; margin-top: 28px; background: transparent; }
+.slidev-layout .rule-block { border-top: 1px solid #cad7df; padding-top: 20px; }
+.slidev-layout .rule-block p { color: var(--course-muted); }
+.slidev-layout .concept-card { padding: 20px 26px; border: 0; border-left: 2px solid #cddde5; border-radius: 0; background: transparent; }
+.slidev-layout .concept-card p:last-child { margin-bottom: 0; }
+.slidev-layout .concept-card .label { font-size: 16px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--course-violet); margin-bottom: 18px; }
+.slidev-layout .big-quote { font-size: 44px; line-height: 1.45; margin-top: 32px; color: #26343d; }
+.slidev-layout .highlight-word { color: var(--course-cyan); border-bottom: 0; }
+.slidev-layout .metric { display: block; font-size: 80px; line-height: 1.1; font-weight: 500; color: var(--course-cyan); margin-bottom: 12px; letter-spacing: -3px; }
+.slidev-layout .metric.violet { color: var(--course-violet); }
+.slidev-layout .steps { list-style: none; padding: 0; margin: 24px 0; counter-reset: step; }
+.slidev-layout .steps li { display: grid; grid-template-columns: 48px 1fr; gap: 18px; margin: 22px 0; padding: 0; }
+.slidev-layout .steps li::before { counter-increment: step; content: counter(step, decimal-leading-zero); font-size: 23px; color: var(--course-cyan); font-weight: 500; padding-top: 2px; }
+.slidev-layout .steps.continue { counter-reset: step 3; }
+.slidev-layout table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 24px; }
+.slidev-layout th { font-size: 17px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--course-cyan); padding: 12px 20px; border-bottom: 1px solid #b5c9d4; }
+.slidev-layout td { padding: 20px; border-bottom: 1px solid #e0e8ed; }
+.slidev-layout tr { background: transparent !important; }
+.slidev-layout .slidev-code-wrapper { margin: 28px 0; }
+.slidev-layout pre.slidev-code { font-size: 27px !important; line-height: 1.6 !important; padding: 28px !important; border: 1px solid #d9e4eb; border-radius: 6px; }
+.slidev-layout :not(pre) > code { font-size: .9em; color: #76549a; background: #f5f1f9; }
+.slidev-layout .mermaid { display: flex; justify-content: center; margin: 24px auto; }
+.slidev-layout .mermaid svg { max-width: 100%; max-height: 380px; }
+.slidev-layout .diagram-tall .mermaid { margin: 8px auto; }
+.agenda-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 60px; row-gap: 30px; margin-top: 36px; }
+.agenda-grid > div { position: relative; padding-left: 58px; }
+.agenda-grid span { position: absolute; left: 0; top: 0; color: var(--course-cyan); font-size: 24px; font-weight: 600; }
+.agenda-grid p { font-size: 22px; color: var(--course-muted); }
+.agenda-grid h3 { margin-bottom: 6px; }
+.course-cover { padding: 64px; background: var(--course-bg); }
+.course-cover h1 { font-size: 84px; line-height: 1.08; letter-spacing: -3.5px; margin-top: 96px; margin-bottom: 30px; }
+.gradient-text { color: var(--course-cyan); background: linear-gradient(100deg, #2b90b6, #146b8c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.cover-description { color: var(--course-muted); font-size: 29px; }
+.cover-bottom { position: absolute; bottom: 42px; left: 64px; right: 64px; display: flex; justify-content: space-between; font-size: 17px; color: var(--course-muted); border-top: 1px solid #e3e8ec; padding-top: 20px; }
+.module-layout { padding: 50px 64px; background: var(--course-bg); }
+.module-number { color: var(--course-violet); font-size: 140px; font-weight: 500; line-height: 1.15; letter-spacing: -7px; margin-top: 55px; }
+.module-content h1 { font-size: 62px; letter-spacing: -2px; max-width: 1080px; margin-top: 18px; }
+.module-content p { color: var(--course-muted); font-size: 29px; max-width: 950px; }
+.source-figure { margin: 16px 0 0; }
+.source-image-button { display: block; width: 100%; background: transparent; border: 0; padding: 0; cursor: zoom-in; }
+.source-image-button img { width: 100%; height: 100%; object-fit: contain; margin: 0 auto; border-radius: 6px; }
+.source-figure figcaption { color: var(--course-muted); font-size: 17px; line-height: 1.4; margin-top: 12px; }
+.source-image-button:focus-visible, .image-dialog button:focus-visible { outline: 3px solid var(--course-cyan); outline-offset: 5px; }
+.image-dialog { width: 96vw; height: 94vh; max-width: none; max-height: none; margin: auto; padding: 18px; border: 1px solid #c5d5df; border-radius: 10px; background: #ffffff; color: #26343d; }
+.image-dialog::backdrop { background: #203a55aa; }
+.image-dialog-toolbar { display: flex; align-items: center; gap: 15px; padding-bottom: 14px; font-size: 16px; }
+.image-dialog-toolbar span { flex: 1; }
+.image-dialog-toolbar button { padding: 8px 14px; border: 1px solid #b4c9d7; border-radius: 6px; font-size: 16px; cursor: pointer; }
+.image-dialog-content { height: calc(100% - 54px); overflow: auto; }
+.image-dialog-content img { width: 100%; height: 100%; object-fit: contain; }
+.image-dialog-content.zoomed img { width: auto; height: auto; max-width: none; max-height: none; margin: auto; }
+.slidev-vclick-target { transition: opacity 350ms ease, translate 350ms ease, scale 350ms ease, transform 350ms ease !important; }
+/* Mantiene el origen del marcador al terminar la traslación de su contenedor. */
+.slidev-vclick-target:has(.rough-annotation) { position: relative; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after, .slidev-vclick-target { transition-duration: 0ms !important; animation-duration: 0ms !important; } }
+@media print { .image-dialog { display: none !important; } .source-image-button { cursor: default; } }
+
+/* Seriph: lienzo blanco, anotaciones visibles y composición abierta. */
+.slidev-layout h1 { color: #267f9f; }
+.course-cover h1, .module-content h1 { color: #26343d; font-weight: 500; }
+.slidev-layout strong { font-weight: 600; }
+.click-progress { margin-left: auto; margin-right: 28px; color: #8a98a1; }
+.teaching-flow { display: grid; grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr); align-items: start; gap: 18px; margin: 30px 0; min-height: 130px; }
+.flow-from, .flow-to { padding-top: 14px; font-size: 40px; line-height: 1.3; text-align: center; }
+.flow-to { color: #267f9f; }
+.flow-connector { position: relative; height: 120px; }
+.flow-connector svg { pointer-events: none; }
+.flow-label { position: absolute; top: 65px; width: 170px; left: -10px; text-align: center; font-family: 'Bradley Hand', 'Segoe Print', cursive; font-size: 22px; color: #267f9f; }
+.annotation-note { font-family: 'Bradley Hand', 'Segoe Print', cursive; color: #267f9f; font-size: 25px; }
+.slidev-layout .attention-quote { font-size: 37px; }
+.arrow-note { position: relative; height: 80px; margin: 8px 0; }
+.arrow-note .annotation-note { position: absolute; left: 182px; top: 26px; }
+.slidev-layout .source-image-button img { border-radius: 3px; }
+.slidev-layout .slidev-vclick-hidden { opacity: 0 !important; }
+.slidev-layout .slidev-vclick-anim-fade.slidev-vclick-hidden { opacity: .35 !important; }
+@media print { .click-progress { display: none; } }
+
+/* Ejemplos de parámetros: fórmulas y conexiones editables. */
+.parameter-equation { font-size: 66px; line-height: 1.45; letter-spacing: 1px; margin: 28px 0 14px; }
+.parameter-equation.neuron-equation { font-size: 51px; margin: 36px 0; }
+.parameter-network { display: grid; grid-template-columns: 1fr 140px 1fr 140px 1fr; gap: 22px; align-items: start; margin: 16px 0 22px; text-align: center; }
+.parameter-network strong { display: block; font-size: 58px; line-height: 1.3; font-weight: 500; }
+.parameter-network span { display: block; font-size: 21px; color: var(--course-muted); }
+.parameter-connector { position: relative; height: 98px; }
+.slidev-layout .parameter-total { font-size: 40px; margin: 18px 0 0; color: var(--course-cyan); }
+.parameter-count table { margin: 14px 0 16px; }
+.parameter-count td { padding: 12px 20px; }
+.parameter-count .takeaway { margin-top: 16px; padding-top: 8px; padding-bottom: 8px; }
