@@ -1,8 +1,10 @@
+# Para Dokploy: Build Path "/" y Dockerfile "Dockerfile".
+# Vive en la raíz (no en slidev/) para que Vercel no lo detecte y publique el sitio estático.
 FROM node:24-alpine AS build
 WORKDIR /app
-COPY package*.json ./
+COPY slidev/package*.json ./
 RUN npm ci
-COPY . .
+COPY slidev/ .
 RUN npm run build
 
 FROM nginx:alpine

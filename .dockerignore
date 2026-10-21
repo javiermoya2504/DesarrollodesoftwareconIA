@@ -1,0 +1,6 @@
+.git
+.venv
+96e70fb2-*
+**/node_modules
+**/dist
+**/.DS_Store
